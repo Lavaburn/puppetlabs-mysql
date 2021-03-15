@@ -5,7 +5,7 @@
 #  ) do |arguments|
 
 Puppet::Functions.create_function(:mysql_dirname) do
-  def mysql_dirname(*args)
+  def mysql_dirname(*arguments)
     raise(Puppet::ParseError, "mysql_dirname(): Wrong number of arguments " +
       "given (#{arguments.size} for 1)") if arguments.size < 1
 
